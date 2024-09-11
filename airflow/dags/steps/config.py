@@ -12,26 +12,26 @@ class PreprocessConfig:
     test_path = REPO_DIR / "data/preprocessed/test.parquet"
     batch_path = REPO_DIR / "data/preprocessed/batch.parquet"
 
+
 class TrainerConfig:
-    model_name ="gradient-boosting"
+    model_name = "gradient-boosting"
     random_state = 42
     train_size = 0.2
     shuffle = True
-    params = {
-        "n_estimators": 100,
-        "min_samples_split": 2,
-        "min_samples_leaf": 1
-    }
+    params = {"n_estimators": 100, "min_samples_split": 2, "min_samples_leaf": 1}
+
 
 class ConditionConfig:
     criteria = 0.05
     metric = "roc_auc"
 
+
 class MlFlowConfig:
-    uri = "http://0.0.0.0:8000"
+    uri = "https://mlflow.home.oursain.net/"
     experiment_name = "cancelation_estimator"
     artifact_path = "model-artifact"
     registered_model_name = "cancelation_estimator"
+
 
 class FeatureEngineeringConfig:
     train_path = REPO_DIR / "data/features_store/train.parquet"
@@ -54,7 +54,7 @@ class FeatureEngineeringConfig:
         "days_in_waiting_list",
         "adr",
         "required_car_parking_spaces",
-        "total_of_special_requests"
+        "total_of_special_requests",
     ]
     ordinal_features = [
         "arrival_date_month",
@@ -63,12 +63,7 @@ class FeatureEngineeringConfig:
         "distribution_channel",
         "reserved_room_type",
         "assigned_room_type",
-        "customer_type"
+        "customer_type",
     ]
-    target_features = [
-        "country",
-        "booking_changes",
-        "agent",
-        "company"
-    ]
+    target_features = ["country", "booking_changes", "agent", "company"]
     target = "is_canceled"

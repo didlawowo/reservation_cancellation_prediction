@@ -4,16 +4,14 @@
 [![Stargazers][stars-shield]][stars-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
-
-
 # Reservation Cancellation Forecasting: a Senior Machine Learning Engineer assignment
 
 ![Pipelines](images/ml_pipelines.png)
 
-In this repository, you'll find a project I handled during a Machine Learning assignment for a leader in the short-term rental industry. 
+In this repository, you'll find a project I handled during a Machine Learning assignment for a leader in the short-term rental industry.
 
-The objective of this assignment was clear: 
+The objective of this assignment was clear:
+
 * Build a Machine Learning model to predict whether a reservation is likely to be cancelled,
 * Develop an MLOps architecture designed for a production environment.
 
@@ -65,14 +63,11 @@ The repository is structured as follows:
 * In the *data* folder is located the original dataset that was provided for this assignement, in addition of a sample for batch prediction. *data/features_store* and *data/preprocessed* are directories to store the data once processed by some stages of the pipelines, such as **preprocessing** or **features_engineering** steps.
 * The same idea for *artifacts* that contains **encoders** generated during the **features_engineering** step.
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ## Getting started
 
-The code runs with Airflow and Mlflow. 
+The code runs with Airflow and Mlflow.
 
 To launch these applications, open a terminal for each and type their respective command lines after having installed them. The complete procedure can be found in the [article](https://medium.com/towards-data-science/build-machine-learning-pipelines-with-airflow-and-mlflow-reservation-cancellation-forecasting-da675d409842).
 
@@ -102,7 +97,6 @@ Don't forget to give the project a star! Thanks again!
 5. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [linkedin-url]: https://www.linkedin.com/in/jeremy-arancio/

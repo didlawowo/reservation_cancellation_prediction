@@ -27,7 +27,7 @@ class ConditionConfig:
 
 
 class MlFlowConfig:
-    uri = "https://mlflow.home.oursain.net/"
+    uri = os.getenv("MLFLOW_TRACKING_URI")
     experiment_name = "cancelation_estimator"
     artifact_path = "model-artifact"
     registered_model_name = "cancelation_estimator"

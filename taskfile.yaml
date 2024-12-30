@@ -1,0 +1,11 @@
+version: '3'
+
+tasks:
+  start-airflow:
+    desc: Start Airflow in standalone mode
+    cmds:
+    - airflow standalone
+    silent: false
+  default:
+    cmds:
+    - task --list
